@@ -11,10 +11,10 @@
     </parent>
 
     <groupId>demo</groupId>
-    <artifactId>pagination-example</artifactId>
+    <artifactId>jpa-streamer-example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pagination-example</name>
-    <description>Pagination example</description>
+    <name>jpa-streamer--example</name>
+    <description>jpa-streamer-example</description>
 
     <properties>
         <java.version>1.8</java.version>
