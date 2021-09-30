@@ -17,20 +17,22 @@ import java.util.stream.Collectors;
 @Service
 public class CustomerServiceImpl implements CustomerService {
 
-    @Autowired
-    private CustomerRepository customerRepository;
+    private final CustomerMapper customerMapper;
+    private final JpaStreamerUtil jpaStreamerUtil;
+    private final CustomerRepository customerRepository;
 
     @Autowired
-    private CustomerMapper customerMapper;
-
-    @Autowired
-    private JpaStreamerUtil jpaStreamerUtil;
+    public CustomerServiceImpl(CustomerRepository customerRepository, CustomerMapper customerMapper, JpaStreamerUtil jpaStreamerUtil) {
+        this.customerRepository = customerRepository;
+        this.customerMapper = customerMapper;
+        this.jpaStreamerUtil = jpaStreamerUtil;
+    }
 
     @Override
     public List<CustomerDto> getCustomers() {
         return customerRepository.findAll()
                 .stream()
-                .map(e -> customerMapper.toDto(e))
+                .map(customerMapper::toDto)
                 .collect(Collectors.toList());
     }
 
