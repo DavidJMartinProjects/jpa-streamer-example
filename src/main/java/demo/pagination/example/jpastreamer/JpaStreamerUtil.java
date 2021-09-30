@@ -1,4 +1,4 @@
-package demo.pagination.example.repository.jpastreamer;
+package demo.pagination.example.jpastreamer;
 
 import com.speedment.jpastreamer.application.JPAStreamer;
 import demo.pagination.example.model.CustomerDto;
@@ -26,9 +26,9 @@ public class JpaStreamerUtil {
         this.customerMapper = customerMapper;
     }
 
-    public List<CustomerDto> getCustomerByFirstName(String firstNameWildCard) {
+    public List<CustomerDto> getCustomerByFirstName(String filter) {
         return jpaStreamer.stream(CustomerEntity.class)
-            .filter(CustomerEntity$.firstName.startsWithIgnoreCase(firstNameWildCard))
+            .filter(CustomerEntity$.firstName.startsWithIgnoreCase(filter))
             .map(customerMapper::toDto)
             .collect(Collectors.toList());
     }

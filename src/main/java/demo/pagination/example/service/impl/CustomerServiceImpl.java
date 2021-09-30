@@ -2,7 +2,7 @@ package demo.pagination.example.service.impl;
 
 import demo.pagination.example.model.CustomerDto;
 import demo.pagination.example.repository.CustomerRepository;
-import demo.pagination.example.repository.jpastreamer.JpaStreamerUtil;
+import demo.pagination.example.jpastreamer.JpaStreamerUtil;
 import demo.pagination.example.repository.mapper.CustomerMapper;
 import demo.pagination.example.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
