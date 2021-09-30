@@ -28,7 +28,7 @@ public class JpaStreamerUtil {
 
     public List<CustomerDto> getCustomerByFirstName(String firstNameWildCard) {
         return jpaStreamer.stream(CustomerEntity.class)
-            .filter(CustomerEntity$.firstName.startsWith(firstNameWildCard))
+            .filter(CustomerEntity$.firstName.startsWithIgnoreCase(firstNameWildCard))
             .map(customerMapper::toDto)
             .collect(Collectors.toList());
     }

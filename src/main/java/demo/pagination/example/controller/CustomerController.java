@@ -34,7 +34,7 @@ public class CustomerController {
 
     @GetMapping(SEARCH_URL)
     public ResponseEntity<List<CustomerDto>> getCustomersByFirstName(@RequestParam String filter) {
-        log.info("GET: {}{}", CUSTOMER_BASE_PATH, SEARCH_URL);
+        log.info("GET: {}{}{}", CUSTOMER_BASE_PATH, SEARCH_URL, "?filter=" + filter);
         return ResponseEntity.ok(customerService.getCustomersByFirstName(filter));
     }
 
