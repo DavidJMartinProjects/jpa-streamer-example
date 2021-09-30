@@ -1,10 +1,10 @@
 package demo.pagination.example.jpastreamer;
 
 import com.speedment.jpastreamer.application.JPAStreamer;
-import demo.pagination.example.model.CustomerDto;
-import demo.pagination.example.repository.entity.CustomerEntity;
-import demo.pagination.example.repository.entity.CustomerEntity$;
-import demo.pagination.example.repository.mapper.CustomerMapper;
+import demo.pagination.example.model.dto.CustomerDto;
+import demo.pagination.example.model.entity.CustomerEntity;
+import demo.pagination.example.model.entity.CustomerEntity$;
+import demo.pagination.example.model.mapper.CustomerMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

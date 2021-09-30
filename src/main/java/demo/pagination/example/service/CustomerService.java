@@ -1,6 +1,6 @@
 package demo.pagination.example.service;
 
-import demo.pagination.example.model.CustomerDto;
+import demo.pagination.example.model.dto.CustomerDto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

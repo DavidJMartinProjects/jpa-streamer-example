@@ -1,9 +1,9 @@
 package demo.pagination.example.service.impl;
 
-import demo.pagination.example.model.CustomerDto;
+import demo.pagination.example.model.dto.CustomerDto;
 import demo.pagination.example.repository.CustomerRepository;
 import demo.pagination.example.jpastreamer.JpaStreamerUtil;
-import demo.pagination.example.repository.mapper.CustomerMapper;
+import demo.pagination.example.model.mapper.CustomerMapper;
 import demo.pagination.example.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

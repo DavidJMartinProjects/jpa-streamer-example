@@ -1,7 +1,7 @@
-package demo.pagination.example.repository.mapper;
+package demo.pagination.example.model.mapper;
 
-import demo.pagination.example.model.CustomerDto;
-import demo.pagination.example.repository.entity.CustomerEntity;
+import demo.pagination.example.model.dto.CustomerDto;
+import demo.pagination.example.model.entity.CustomerEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;

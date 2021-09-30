@@ -1,6 +1,6 @@
 package demo.pagination.example.controller;
 
-import demo.pagination.example.model.CustomerDto;
+import demo.pagination.example.model.dto.CustomerDto;
 import demo.pagination.example.service.CustomerService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

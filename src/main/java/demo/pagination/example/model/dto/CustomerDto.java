@@ -1,4 +1,4 @@
-package demo.pagination.example.model;
+package demo.pagination.example.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

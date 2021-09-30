@@ -1,4 +1,4 @@
-package demo.pagination.example.repository.entity;
+package demo.pagination.example.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
